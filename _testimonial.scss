@@ -1,0 +1,48 @@
+.testimonial{
+
+    margin-inline:10px;
+    margin-block: 100px;
+
+    &-heading{
+        font-family: "Poppins" , sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+        color: #333333;
+        margin-bottom: 30px;
+    }
+
+    &-card{
+        display: flex;
+        column-gap: 30px;
+
+        &-img{
+            width: 82px;
+            img{
+                border-radius: 12px;
+            }
+            
+        }
+
+        &-content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+            justify-content: center;
+
+            &-heading{
+                font-family: 'Poppins' , sans-serif;
+                font-weight: 500;
+                font-size: 24px;
+                color: #333333;
+            }
+
+            &-description{
+                font-family: 'Poppins' , sans-serif;
+                font-weight: 500;
+                font-size: 18px;
+                color: #828282;
+            }
+        }
+    }
+}

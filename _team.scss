@@ -1,0 +1,54 @@
+.team {
+
+    margin-inline: 10px;
+
+    &-description {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #EB5757;
+    }
+
+    &-header {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 54px;
+        font-family: 'Poppins', sans-serif;
+        color: #4F4F4F;
+        margin-block: 12px;
+    }
+
+    &-sub-heading {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        font-family: 'Poppins', sans-serif;
+        color: #4F4F4F;
+        max-width: 273px;
+        margin-bottom: 36px;
+    }
+
+    &-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 9px;
+
+        
+
+        .team-img img {
+            border-radius: 24px;
+        }
+    }
+
+    &-img{
+
+        &:nth-child(1){
+            grid-row: span 2;
+            align-self: center;
+        }
+
+        &:nth-child(2){
+            padding-right: 20px;
+        }
+    }
+}

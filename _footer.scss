@@ -1,0 +1,113 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #100E1D;
+    padding-inline: 41px;
+    padding-top: 36px;
+
+    &-links {
+        & ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            list-style: none;
+            margin-bottom: 64px;
+
+            & li a {
+                color: #FFFFFF;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+            }
+        }
+    }
+
+    &-content {
+
+        margin-bottom: 65px;
+
+        &-logo {
+            font-family: 'Heebo', sans-serif;
+            font-size: 36px;
+            font-weight: 800;
+            color: #f2f2f2;
+            margin-bottom: 10px;
+        }
+
+        &-icons {
+            display: flex;
+            align-items: center;
+            column-gap: 11px;
+
+            & img {
+                width: 24px;
+            }
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        margin-bottom: 171px;
+
+        &-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+            font-weight: 500;
+            color: #828282;
+        }
+
+        &-input {
+            background-color: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 12px;
+
+            & input {
+                border: none;
+                background: transparent;
+                padding: 15px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                color: #bdbdbd;
+            }
+
+            & button {
+                padding-inline: 20px;
+                padding-block: 12px;
+                margin-block: 4px;
+                margin-right: 4px;
+                border-radius: 12px;
+                background-color: #2d9cdb;
+                color: #F2F2F2;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                border: none;
+            }
+        }
+    }
+
+    &-copy {
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: #f2f2f2;
+        }
+
+        a{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            color: #f2f2f2;
+            text-decoration:underline;
+        }
+    }
+}
