@@ -87,6 +87,7 @@ img {
     background-color: #ffffff;
     display: flex;
     justify-content: center;
+    transition: 0.3s;
   }
   .header ul {
     display: flex;
@@ -100,23 +101,26 @@ img {
     font-size: 24px;
     font-weight: 500;
   }
-  .header-menu-icon {
+  .header ul li a {
+    color: #292828;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+  }
+  .header ul li a:hover {
+    opacity: 1;
+    font-weight: 700;
+  }
+  .header .close-icon {
     position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
-    z-index: 100;
-    transition: 0.4s;
-  }
-  .header-menu-icon span:nth-child(1) {
-    transform: rotate(45deg) translateX(10px);
-  }
-  .header-menu-icon span:nth-child(2) {
-    opacity: 0;
-  }
-  .header-menu-icon span:nth-child(3) {
-    transform: rotate(-45deg) translate(9px, 2px);
+    right: 0.55rem;
+    top: 0.9rem;
+    font-size: 2rem;
   }
 }
+.show-menu {
+  left: 0;
+}
+
 .hero {
   margin-top: 48px;
   margin-bottom: 102px;

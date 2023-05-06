@@ -49,6 +49,7 @@
             background-color:#ffffff ;
             display: flex;
             justify-content: center;
+            transition: .3s;
         }
 
         & ul {
@@ -62,28 +63,32 @@
                 font-family: 'Poppins' , sans-serif;
                 font-size: 24px;
                 font-weight: 500;
+                
+
+                a{
+                    color: #292828;
+                    opacity: .7;
+                    transition: .3s ease-in-out;
+
+                    &:hover{
+                        opacity: 1;
+                        font-weight: 700;
+                    }
+                }
 
             }
         }
 
-        &-menu-icon{
+        .close-icon{
             position: absolute;
-            right: 1.5rem;
-            top: 1.5rem;
-            z-index: 100;
-            transition:  .4s;
-
-            & span:nth-child(1){
-                transform: rotate(45deg) translateX(10px);
-            }
-
-            & span:nth-child(2){
-                opacity: 0;
-            }
-
-            & span:nth-child(3){
-                transform: rotate(-45deg) translate(9px,2px);
-            }
+            right: 0.55rem;
+            top: 0.9rem;
+            font-size: 2rem;
         }
+
     }
+}
+
+.show-menu{
+    left: 0;
 }
